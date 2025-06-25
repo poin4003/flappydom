@@ -5,7 +5,7 @@ int main(void)
     int windowHeight = 1000;
     int windowWidth = 1000;
     const char* WINDOWNAME = "Flappy Dom";
-    const int GAP = 50;
+    const int GAP = 200;
 
     InitWindow(windowWidth, windowHeight, WINDOWNAME);
 
@@ -27,7 +27,7 @@ int main(void)
         .height = windowHeight - (collum1.height + GAP),
         .width = 50,
         .x = windowWidth,
-        .y = windowHeight - (collum1.height + GAP), 
+        .y = (collum1.height + GAP), 
     };
 
     while (!WindowShouldClose())
